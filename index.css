@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark: #2e3440;
+    --light: #eceff4;
+
+    font-family: 'Roboto Mono', monospace;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1rem 10rem 1rem 10rem;
+    position: fixed;
+    background-color: var(--light);
+}
+
+main {
+    width: 100%;
+    padding: 1rem 10rem 1rem 10rem;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: .5rem;
+}
+
+footer a {
+    font-size: 1rem;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+#header-left {
+    flex: 1;
+}
+
+#header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 2rem;
+}
+
+main h1 {
+    font-size: 5rem;
+}
+
+.topic {
+    display: flex;
+    height: 56rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home div {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#top {
+    text-align: left;
+}
+
+#bottom {
+    text-align: right;
+}
+
+a, li {
+    font-size: 1.3rem;
+    text-decoration: none; color: var(--dark);
+}
+
+#projetos, #contatos {
+    align-items: start;
+}
+
+#sobre, #certificados {
+    align-items: end;
+}
+
+#sobre div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#sobre img {
+    border-radius: 50%;
+}
+
+#card-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.card {
+    width: 32rem;
+    border: 1px var(--dark) solid;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+}
+
+.card img {
+    flex: 1;
+    width: 50%;
+}
+.card div {
+    flex: 1;
+    padding: 1rem;
+}
+.card h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card p {
+    font-size: 1.2rem;
+}
+
+.hidden-card {
+    width: 32rem;
+}
+
+#certificados h1 {
+    text-align: end;
+}
